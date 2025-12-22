@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>はなふだっ！</title>
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.webp">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="main-visual" id="main-visual">
+    <img src="images/mv.webp" alt="メインビジュアル">
+  </div>
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html#main-visual"><span class="gold">◆</span>トップ</a></li>
+      <li><a href="index.html#sec-intro"><span class="gold">◆</span>花札とは</a></li>
+      <li><a href="index.html#sec-thumbnail"><span class="gold">◆</span>札を知る</a></li>
+      <li><a href="index.html#sec-yakutsukuri"><span class="gold">◆</span>役作り</a></li>
+    </ul>
+  </nav>
+
+  <section id="sec-intro" class="scroll-animated-section">
+    <h1 class="left"><span class="red">◆</span>花札とは</h1>
+    <div class="wrapper-justify" id="sec-intro-wrapper">
+      <div class="sec-intro-pic">
+        <img src="images/temochi.webp" alt="花札の画像">
+      </div>
+      <div class="sec-intro-text" id="parallax">
+        <p>日本のかるたの一種で、「<em>花かるた</em>」とも呼ばれます。その歴史は古く、安土・桃山時代の「天正かるた」、江戸時代前期の「ウンスンカルタ」から、江戸時代中期に現在使用している花札ができたと言われています。</p>
+        <p>花札は<em>四十八枚ある札</em>を使って遊びます。札には、一月から十二月までの折々の花や草木が各月４枚ずつ描かれています。</p>
+        <p>各絵柄ごとに点数がついているほか、組み合わせによってできあがる「<em>役</em>」というものがあり、役にも点数がついています。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sec-thumbnail" class="scroll-animated-section">
+    <div class="fuda-preview">
+      <h1 class="left"><span class="white">◆</span>札を知る</h1>
+      <img id="fuda-select" src="images/back.webp" alt="札プレビュー">
+      <p class="fuda-intro">気になる札を選びましょう</p>
+    </div>
+
+    <ul class="fuda-thumbnails">
+      <li><img class="thumbnail" src="images/h1.webp" data-id="h1" alt="松に鶴"></li>
+      <li><img class="thumbnail" src="images/h2.webp" data-id="h2" alt="梅に鶯"></li>
+      <li><img class="thumbnail" src="images/h3.webp" data-id="h3" alt="桜に幕"></li>
+      <li><img class="thumbnail" src="images/h4.webp" data-id="h4" alt="藤に不如帰"></li>
+      <li><img class="thumbnail" src="images/h5.webp" data-id="h5" alt="菖蒲に八ツ橋"></li>
+      <li><img class="thumbnail" src="images/h6.webp" data-id="h6" alt="牡丹に蝶"></li>
+      <li><img class="thumbnail" src="images/h7.webp" data-id="h7" alt="萩に猪"></li>
+      <li><img class="thumbnail" src="images/h8.webp" data-id="h8" alt="芒に月"></li>
+      <li><img class="thumbnail" src="images/h9.webp" data-id="h9" alt="菊に杯"></li>
+      <li><img class="thumbnail" src="images/h10.webp" data-id="h10" alt="紅葉に鹿"></li>
+      <li><img class="thumbnail" src="images/h11.webp" data-id="h11" alt="柳に小野道風"></li>
+      <li><img class="thumbnail" src="images/h12.webp" data-id="h12" alt="桐に鳳凰"></li>
+    </ul>
+  </section>
+
+  <section id="sec-yakutsukuri" class="scroll-animated-section">
+    <h1><span class="red">◆</span><span id="yaku-name">役を作ってみよう</span><span class="red">◆</span></h1>
+    <div class="yakutsukuri">
+      <div class="yaku-select wrapper-justify">
+        <div class="yaku-select-item">
+          <img src="images/h1.webp" alt="松に鶴" data-id="h1">
+          <p class="selected-yaku-name"></p>
+        </div>
+
+        <div class="yaku-select-item">
+          <img src="images/h3.webp" alt="桜に幕" data-id="h3">
+          <p class="selected-yaku-name"></p>
+        </div>
+
+        <div class="yaku-select-item">
+          <img src="images/h8.webp" alt="芒に月" data-id="h8">
+          <p class="selected-yaku-name"></p>
+        </div>
+
+        <div class="yaku-select-item">
+          <img src="images/h11.webp" alt="柳に小野道風" data-id="h11">
+          <p class="selected-yaku-name"></p>
+        </div>
+
+        <div class="yaku-select-item">
+          <img src="images/h12.webp" alt="桐に鳳凰" data-id="h12">
+          <p class="selected-yaku-name"></p>
+        </div>
+      </div>
+
+      <div class="yaku-clear">
+        <button id="clear-button">選択を取り消し</button>
+        <button id="show-yaku-list">役の一覧を見る</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>©2025 はなふだっ！ All Rights Reserved</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
