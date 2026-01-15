@@ -1,4 +1,5 @@
 # JS22-Kadai1-PW51A01
+**GitHub Pages ▶︎ https://linq29.github.io/JS22-Kadai5-PW51A01/**
 
 本リポジトリは、授業課題として制作した花札の紹介サイトです。  
 ※検索避けのため、リポジトリ名には課題番号を使用しています。
